@@ -1,9 +1,13 @@
 import React from "react";
+import "./Products.scss";
+import ProductCard from "./ProductCard";
 
-const ProductList = (props) => {
+const ProductList = ({ products }) => {
   return (
     <div>
-      <h2>Product List</h2>
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
     </div>
   );
 };
