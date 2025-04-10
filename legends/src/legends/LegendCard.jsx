@@ -13,7 +13,7 @@ function LegendCard({legend}) {
     <Col>
       <Card onClick={handleToggle}>
         {!show ? (
-          <Card.Img variant="top" src={legend.img}  />
+          <Card.Img variant="top" src={legend.img} alt={legend.id} />
         ) : (
           <Card.Body >
             <Card.Title>{legend.name}</Card.Title>

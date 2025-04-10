@@ -61,15 +61,15 @@ export const data = [
       "https://www.transfermarkt.com.tr/bastian-schweinsteiger/profil/spieler/2514",
     official_career: "1992-2020",
   },
-  {
-    id: 8,
-    name: "Bobby Charlton",
-    img: "https://www.gillinghamfootballclub.com/siteassets/image/club-pics/misc/1966-features/charlton.jpg/Large",
-    statistics: ["686 Matches", "231 Goals", "10 Assists", "7 Cups"],
-    profile:
-      "https://www.transfermarkt.com.tr/sir-bobby-charlton/profil/spieler/174874",
-    official_career: "1956-1980",
-  },
+//   {
+//     id: 8,
+//     name: "Bobby Charlton",
+//     img: "https://www.gillinghamfootballclub.com/siteassets/image/club-pics/misc/1966-features/charlton.jpg/Large",
+//     statistics: ["686 Matches", "231 Goals", "10 Assists", "7 Cups"],
+//     profile:
+//       "https://www.transfermarkt.com.tr/sir-bobby-charlton/profil/spieler/174874",
+//     official_career: "1956-1980",
+//   },
   {
     id: 9,
     name: "Bobby Moore",
@@ -309,24 +309,24 @@ export const data = [
       "https://www.transfermarkt.com.tr/sir-kenny-dalglish/profil/spieler/135269",
     official_career: "1968-1991",
   },
-  {
-    id: 36,
-    name: "Kylian Mbappe",
-    img: "https://www.ligue1.com/-/media/Project/LFP/Ligue1-COM/Images/Articles-Assests/2023/09/05/0409-2324-L1-PSG-Kylian-Mbappe-2.jpg?h=1600&iar=0&w=1280&hash=17213D98E0793247815A4ED9D36C8A2A",
-    statistics: ["357 Matches", "276 Goals", "123 Assists", "18 Cups"],
-    profile:
-      "https://www.transfermarkt.com.tr/kylian-mbappe/profil/spieler/342229",
-    official_career: "2011-Present",
-  },
-  {
-    id: 37,
-    name: "Leonardo Bonucci",
-    img: "https://images.bild.de/64e78b2b461c40464f950feb/f03ae6a0edc6839d39035fe5441be189,40a47aaa?w=992",
-    statistics: ["694 Matches", "48 Goals", "13 Assists", "21 Cups"],
-    profile:
-      "https://www.transfermarkt.com.tr/leonardo-bonucci/profil/spieler/39983",
-    official_career: "2005-Present",
-  },
+//   {
+//     id: 36,
+//     name: "Kylian Mbappe",
+//     img: "https://www.ligue1.com/-/media/Project/LFP/Ligue1-COM/Images/Articles-Assests/2023/09/05/0409-2324-L1-PSG-Kylian-Mbappe-2.jpg?h=1600&iar=0&w=1280&hash=17213D98E0793247815A4ED9D36C8A2A",
+//     statistics: ["357 Matches", "276 Goals", "123 Assists", "18 Cups"],
+//     profile:
+//       "https://www.transfermarkt.com.tr/kylian-mbappe/profil/spieler/342229",
+//     official_career: "2011-Present",
+//   },
+//   {
+//     id: 37,
+//     name: "Leonardo Bonucci",
+//     img: "https://images.bild.de/64e78b2b461c40464f950feb/f03ae6a0edc6839d39035fe5441be189,40a47aaa?w=992",
+//     statistics: ["694 Matches", "48 Goals", "13 Assists", "21 Cups"],
+//     profile:
+//       "https://www.transfermarkt.com.tr/leonardo-bonucci/profil/spieler/39983",
+//     official_career: "2005-Present",
+//   },
   {
     id: 38,
     name: "Lionel Messi",
@@ -415,15 +415,15 @@ export const data = [
       "https://www.transfermarkt.com.tr/michel-platini/profil/spieler/88994",
     official_career: "1973-1988",
   },
-  {
-    id: 48,
-    name: "Miroslav Klose",
-    img: "https://images.bild.de/5d56a7e93de37c0001f4751e/fc43045327b6f89396c66e116e315711,d07ae3c5?w=992",
-    statistics: ["668 Matches", "258 Goals", "137 Assists", "10 Cups"],
-    profile:
-      "https://www.transfermarkt.com.tr/miroslav-klose/profil/spieler/10",
-    official_career: "1993-2017",
-  },
+//   {
+//     id: 48,
+//     name: "Miroslav Klose",
+//     img: "https://images.bild.de/5d56a7e93de37c0001f4751e/fc43045327b6f89396c66e116e315711,d07ae3c5?w=992",
+//     statistics: ["668 Matches", "258 Goals", "137 Assists", "10 Cups"],
+//     profile:
+//       "https://www.transfermarkt.com.tr/miroslav-klose/profil/spieler/10",
+//     official_career: "1993-2017",
+//   },
   {
     id: 49,
     name: "Mohamed Salah",
