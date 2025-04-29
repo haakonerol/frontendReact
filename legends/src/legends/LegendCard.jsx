@@ -2,25 +2,27 @@ import { useState } from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
-function LegendCard({legend}) {
+function LegendCard({ legend }) {
   const [show, setShow] = useState(false);
 
-  function handleToggle(){
-   setShow(!show)
+  function handleToggle() {
+    setShow(!show);
   }
 
   return (
-    <Col>
+    <Col >
       <Card onClick={handleToggle}>
         {!show ? (
           <Card.Img variant="top" src={legend.img} alt={legend.id} />
         ) : (
-          <Card.Body >
+          <Card.Body>
             <Card.Title>{legend.name}</Card.Title>
             <Card.Text as="div">
               <ul>
-                {legend.statistics.map((item,i) => (
-                  <li className="h6 text-start" key={i}>{item}</li>
+                {legend.statistics.map((item, i) => (
+                  <li className="h6 text-start" key={i}>
+                    {item}
+                  </li>
                 ))}
               </ul>
               <span>{legend.official_career}</span>

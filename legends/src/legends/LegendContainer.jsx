@@ -17,7 +17,7 @@ const LegendContainer = () => {
 
   return (
     <div>
-      <Form.Control type="search" placeholder="Search legends..." onChange={handleSearch}/>
+      <Form.Control type="search" placeholder="Search legends..." onChange={handleSearch} className="mb-3"/>
       <Container className="text-center">
         <Row xs={1} sm={2} md={3} lg={4}>
           {filteredData.map((legend) => (
