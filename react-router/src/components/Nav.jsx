@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 
 
-import logo from "../img/logo.png";
+import logo from "../img/getacademy.png";
 
 function Nav() {
   return (

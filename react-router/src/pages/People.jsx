@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const People = () => {
   const [people, setPeople] = useState([]);
+  const navigate = useNavigate()
 
   const getPeople = () => {
    fetch("https://reqres.in/api/users?page=1", {
@@ -46,7 +48,7 @@ const People = () => {
               className=" col-sm-12 col-md-6 col-lg-4"
               type="button"
             >
-              <img className="rounded" src={avatar} alt="img" />
+              <img className="rounded" src={avatar} alt="img" onClick={()=> navigate(`/people/${id}`)} />
               <h6>
                 {first_name} {last_name}
               </h6>

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import People from "./pages/People";
 import Path from "./pages/Paths";
 import NotFound from "./pages/NotFound";
+import PersonDetail from "./pages/PersonDetail";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/people" element={<People />} />
+        <Route path="/people/:id" element={<PersonDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/paths" element={<Path />} />
         <Route path="/*" element={<NotFound />} />
