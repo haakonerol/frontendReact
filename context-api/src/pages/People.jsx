@@ -10,11 +10,21 @@ const People = () => {
   const [people, setPeople] = useState([]);
 
   const getPeople = () => {
-    fetch("https://reqres.in/api/users")
-      .then((res) => res.json())
-      .then((data) => setPeople(data.data))
-      .catch((err) => console.log(err));
-  };
+   fetch("https://reqres.in/api/users?page=1", {
+     headers: {
+       "Accept": "application/json",
+       "x-api-key": "reqres-free-v1"
+     }
+   })
+     .then((res) => {
+       if (!res.ok) {
+         throw new Error(`HTTP error! status: ${res.status}`);
+       }
+       return res.json();
+     })
+     .then((data) => setPeople(data.data))
+     .catch((err) => console.error("Fetch error:", err));
+ };
   useEffect(() => {
     getPeople();
   }, []);

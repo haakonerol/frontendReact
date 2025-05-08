@@ -11,17 +11,33 @@ const PersonDetail = () => {
   const [person, setPerson] = useState(null);
   const [error, setError] = useState(false);
 
+  const getPerson = () => {
+   // setLoading(true);
+   fetch(`https://reqres.in/api/users/${id}`, {
+     headers: {
+       Accept: "application/json",
+       "x-api-key": "reqres-free-v1",
+     },
+   })
+     .then((res) => {
+       if (!res.ok) {
+         setError(true);
+         throw new Error(`HTTP error! status: ${res.status}`);
+       }
+       return res.json();
+     })
+     .then((data) => {
+       setPerson(data.data);
+      //  setLoading(false);
+     })
+     .catch((err) => {
+       console.error("Fetch error:", err);
+      //  setLoading(false);
+     });
+ };
+
   useEffect(() => {
-    fetch(`https://reqres.in/api/users/${id}`)
-      .then((res) => {
-        if (!res.ok) {
-          setError(true);
-          throw new Error("Something went wrong");
-        }
-        return res.json();
-      })
-      .then((data) => setPerson(data.data))
-      .catch((err) => console.log(err));
+    getPerson()
   }, [id]);
 
   if (error) {
