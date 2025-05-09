@@ -2,7 +2,8 @@ import { useContext, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { LoginContext } from "../context/LoginContext";
+// import { LoginContext } from "../context/LoginContext";
+import { LoginContext } from "../context/LoginProvider";
 import { useNavigate } from "react-router";
 
 const Login = () => {
@@ -16,6 +17,7 @@ const Login = () => {
     user?.email && user?.password && setSigned(true);
     setUser({ email: "", password: "" });
     navigate(-1)
+    console.log(signed)
   };
   console.log(user)
   console.log(signed)
