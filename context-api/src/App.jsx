@@ -7,10 +7,16 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router"
 import PersonDetail from "./pages/PersonDetail"
 import Login from "./pages/Login"
 import PrivateRouter from "./pages/PrivateRouter"
+import { LoginContext } from "./context/LoginContext"
+import { useState } from "react"
 
 function App() {
+
+   const [signed,setSigned] = useState(false)
+
   return (
-    <BrowserRouter>
+   <LoginContext.Provider value={{signed, setSigned}}>
+      <BrowserRouter>
       <Navs />
       <Routes>
         <Route index element={<Home />} />
@@ -26,6 +32,8 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+   </LoginContext.Provider>
+    
   )
 }
 
