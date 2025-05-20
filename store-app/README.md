@@ -10,3 +10,39 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Project Skeleton
+
+```
+ Store App with Tailwindcss
+
+SOLUTION
+📦src
+ ┣ 📂assets
+ ┃ ┗ 📜logo.png
+ ┣ 📂components
+ ┃ ┣ 📜Loading.jsx
+ ┃ ┣ 📜Navbar.jsx
+ ┃ ┣ 📜ProductCard.jsx
+ ┃ ┣ 📜SearchInput.jsx
+ ┃ ┣ 📜Stats.jsx
+ ┃ ┗ 📜Testimonial.jsx
+ ┣ 📂context
+ ┃ ┣ 📜AuthProvider.jsx
+ ┃ ┗ 📜ProductProvider.jsx
+ ┣ 📂helper
+ ┃  ┗ 📜data.js
+ ┣ 📂pages
+ ┃ ┣ 📜About.jsx
+ ┃ ┣ 📜Home.jsx
+ ┃ ┣ 📜Login.jsx
+ ┃ ┣ 📜NotFound.jsx
+ ┃ ┣ 📜ProductDetail.jsx
+ ┃ ┗ 📜Products.jsx
+ ┣ 📂router
+ ┃ ┣ 📜AppRouter.jsx
+ ┃ ┗ 📜PrivateRouter.jsx
+ ┣ 📜App.js
+ ┣ 📜index.css
+ ┗ 📜index.js
+```
