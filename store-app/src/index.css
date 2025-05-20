@@ -1,0 +1,18 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+
+@layer components {
+   .loginDiv{
+      background: linear-gradient(71deg, #FEAF00 19.35%,#F8D442 90.12%);
+      @apply flex justify-center items-center min-h-screen
+   }
+   .loginInput{
+      height: 44px;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      padding: 0.6rem;
+      @apply focus:outline-main focus:caret-main
+   }
+}
+
