@@ -1,17 +1,12 @@
-import Login from "./pages/Login"
+import AppRouter from "./router/AppRouter";
 
- 
 
 function App() {
-  
   return (
-   <div>
-      <Login/>
-   </div>
-   //  <div className="min-h-screen bg-slate-700 text-white text-4xl flex justify-center items-center">
-   //   <h1 className="animate-pulse">Welcome to store app</h1>
-   //  </div>
-  )
+    <div>
+      <AppRouter/>
+    </div>
+  );
 }
 
-export default App
+export default App;
