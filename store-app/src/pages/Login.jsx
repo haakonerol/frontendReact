@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Login = () => {
+
+   const [email, setEmail] = useState("")
+   const [password, setPassword] = useState("")
+
+   const handleSubmit = (e) => {
+      e.preventDefault()
+
+      if(email === "admin@aa.com" && password === "admin"){
+         console.log({email, password})
+      }else {
+         alert("User credentials are wrong!")
+      }
+   }
+
   return (
     <div className="loginDiv">
       <div className="h-[400px] w-10/12 sm:w-[450px] bg-white rounded-[15px] p-5 flex flex-col justify-center">
@@ -19,10 +33,11 @@ const Login = () => {
         <form
           action=""
           className="flex flex-col text-left p-3 font-montserrat gap-1"
+          onSubmit={(e)=> handleSubmit(e)}
         >
           <label
             htmlFor="email"
-            className="text-label hover:cursor-pointer hover:after:content-[':admin@aa.com']"
+            className="text-label hover:cursor-pointer hover:after:content-['-->admin@aa.com']"
           >
             Email
           </label>
@@ -32,10 +47,11 @@ const Login = () => {
             placeholder="Enter your email"
             className="loginInput"
             required
+            onChange={(e)=>setEmail(e.target.value)}
           />
           <label
             htmlFor="password"
-            className="text-label hover:cursor-pointer hover:after:content-[':admin@aa.com']"
+            className="text-label hover:cursor-pointer hover:after:content-['-->admin']"
           >
             Password
           </label>
@@ -45,6 +61,7 @@ const Login = () => {
             placeholder="Enter your password"
             className="loginInput"
             required
+            onChange={(e)=> setPassword(e.target.value)}
           />
           <button className="bg-main h-10 text-white rounded-[4px] hover:opacity-90 mt-2">
             Sign in
