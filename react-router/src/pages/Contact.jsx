@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const Contact = () => {
   const [formValues, setFormValues] = useState({
-    username: "",
-    email: "",
-    password: "",
+    username: "test",
+    email: "test@test.no",
+    password: "******",
   });
 
   const handleSubmit = (e) => {
@@ -33,7 +33,7 @@ const Contact = () => {
             id="username"
             placeholder="Enter your username"
             value={formValues.username}
-            onChange={handleFormValues}
+            // onChange={handleFormValues}
           />
         </div>
         <div className="mb-3">
@@ -47,7 +47,7 @@ const Contact = () => {
             id="email"
             placeholder="Enter your email"
             value={formValues.email}
-            onChange={handleFormValues}
+            // onChange={handleFormValues}
           />
         </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
             id="password"
             placeholder="Enter your password"
             value={formValues.password}
-            onChange={handleFormValues}
+            // onChange={handleFormValues}
           />
         </div>
         <div className="text-center">
