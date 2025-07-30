@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-
-import logo from "../img/getacademy.png";
+import logo from "../img/universityImage.jpg";
 
 function Nav() {
   return (
@@ -55,4 +54,3 @@ function Nav() {
 }
 
 export default Nav;
-
