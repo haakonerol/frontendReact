@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <div className="container">
       <h1 className="text-center mt-4">CONTACT FORM</h1>
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form onSubmit={(e) => e.preventDefault()}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             Username
@@ -66,7 +66,7 @@ const Contact = () => {
           />
         </div>
         <div className="text-center">
-          <button className="btn btn-danger mb-4">Submit</button>
+          <button className="btn btn-danger mb-4" disabled>Submit</button>
         </div>
       </form>
     </div>

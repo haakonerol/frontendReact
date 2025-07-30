@@ -2,21 +2,30 @@ import { useContext, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { Navigate, Outlet } from "react-router-dom";
 
 import { useNavigate } from "react-router";
 
 const Login = () => {
-  const [user, setUser] = useState({ email: "", password: "" });
-  
-  const navigate = useNavigate()
+  const [user, setUser] = useState({
+    email: "test@test.no",
+    password: "******",
+  });
+
+  const [isLogged, setIsLogged] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
-    
+    if (user.email === "test@test.no" && user.password === "******") {
+      setIsLogged(true);
+      navigate("/");
+    } else {
+      alert("Invalid credentials");
+    }
   };
-  
 
   return (
     <Container>
@@ -29,7 +38,7 @@ const Login = () => {
             placeholder="Enter your email"
             name="email"
             value={user?.email}
-            onChange={(e) => setUser({ ...user, email: e.target.value })}
+            // onChange={(e) => setUser({ ...user, email: e.target.value })}
           />
         </Form.Group>
 
@@ -40,7 +49,7 @@ const Login = () => {
             placeholder="Enter your password"
             name="password"
             value={user?.password}
-            onChange={(e) => setUser({ ...user, password: e.target.value })}
+            // onChange={(e) => setUser({ ...user, password: e.target.value })}
           />
         </Form.Group>
         <Container className="text-center">
